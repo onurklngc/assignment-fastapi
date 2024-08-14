@@ -8,9 +8,9 @@ scheduling. It uses Docker for containerization and supports both Docker Compose
 ## a) Build with docker-compose
 
 1. **Create Environment Variables:**
-    - Create your own `.env` file by using the [sample](.env_sample_for_docker_compose) provided:
+    - Create your own `.env` file by using the [sample](envs/.env_sample_for_docker_compose) provided:
       ```sh
-      cp .env_sample_for_docker_compose .env
+      cp envs/.env_sample_for_docker_compose .env
       ```
 
 2. **Build and Start Containers:**
@@ -24,9 +24,9 @@ scheduling. It uses Docker for containerization and supports both Docker Compose
 Alternatively, you can start each container separately.
 
 1. **Create Environment Variables:**
-    - Use the [sample file](.env_sample_for_manual_builds) for manual builds:
+    - Use the [sample file](envs/.env_sample_for_manual_builds) for manual builds:
       ```sh
-      cp .env_sample_for_manual_builds .env
+      cp envs/.env_sample_for_manual_builds .env
       set -o allexport
       source .env
       ```
